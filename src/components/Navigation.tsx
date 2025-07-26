@@ -23,9 +23,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">L</span>
-            </div>
+            <img 
+              src="/lovable-uploads/09c35dc0-d533-4502-8b51-fa691e961862.png" 
+              alt="LearnSpace Logo" 
+              className="w-10 h-10"
+            />
             <span className="font-heading font-bold text-xl text-foreground">LearnSpace</span>
           </Link>
 
