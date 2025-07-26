@@ -22,13 +22,16 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/09c35dc0-d533-4502-8b51-fa691e961862.png" 
               alt="LearnSpace Logo" 
-              className="w-10 h-10"
+              className="w-[60px] h-[60px]"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(72%) sepia(15%) saturate(638%) hue-rotate(142deg) brightness(95%) contrast(86%)'
+              }}
             />
-            <span className="font-heading font-bold text-xl text-foreground">LearnSpace</span>
+            <span className="font-heading font-bold text-xl text-foreground -ml-2 mt-2">LearnSpace</span>
           </Link>
 
           {/* Desktop Navigation */}
