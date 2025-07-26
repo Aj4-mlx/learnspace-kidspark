@@ -16,7 +16,7 @@ import {
   Shield
 } from 'lucide-react';
 import heroImage from '@/assets/hero-kids-tech.jpg';
-import collaborationImage from '@/assets/kids-collaboration.jpg';
+// import collaborationImage from '@/assets/kids-with-robot.jpg';
 
 const Index = () => {
   const programs = [
@@ -125,8 +125,8 @@ const Index = () => {
             </div>
             <div className="order-first md:order-last">
               <img 
-                src={collaborationImage} 
-                alt="Kids collaborating on tech projects" 
+                src="/lovable-uploads/67e0afb1-45e1-4267-9d08-1572640197da.png" 
+                alt="Kids learning with robot technology" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
