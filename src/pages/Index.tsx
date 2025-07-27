@@ -66,7 +66,7 @@ const Index = () => {
     {
       icon: GraduationCap,
       title: "Experienced Educators",
-      description: "Our team includes graduates from Ain Shams & AUC with expertise in both technology and child education."
+      description: "Designed by Ain Shams Computer Engineers & AUC trainers with expertise in both technology and child education"
     },
     {
       icon: Shield,

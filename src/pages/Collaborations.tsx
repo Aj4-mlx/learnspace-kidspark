@@ -162,7 +162,7 @@ const Collaborations = () => {
                   <CheckCircle className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-heading font-semibold text-lg text-foreground mb-2">Expert Educators</h3>
-                    <p className="font-body text-muted-foreground">Our team includes graduates from Ain Shams and AUC with specialized training in child education.</p>
+                    <p className="font-body text-muted-foreground">Designed by Ain Shams Computer Engineers & AUC trainers with expertise in both technology and child education</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
