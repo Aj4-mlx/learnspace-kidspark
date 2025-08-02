@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 import { LucideIcon } from 'lucide-react';
 
 interface ProgramCardProps {
@@ -29,8 +30,8 @@ const ProgramCard = ({ icon: Icon, title, tagline, description, variant = 'home'
       </CardContent>
       {variant === 'home' && (
         <CardFooter className="p-6 pt-0">
-          <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            Learn More
+          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Link to="/programs">Learn More</Link>
           </Button>
         </CardFooter>
       )}

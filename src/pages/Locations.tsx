@@ -129,34 +129,6 @@ const Locations = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-6">
-              Interactive Map
-            </h2>
-            <p className="font-body text-muted-foreground text-lg">
-              Explore our locations and find the most convenient one for your family
-            </p>
-          </div>
-          
-          <div className="bg-card rounded-lg border border-border p-8 text-center">
-            <div className="w-full h-96 bg-muted/50 rounded-lg flex items-center justify-center mb-6">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                <p className="font-body text-muted-foreground">Interactive map coming soon</p>
-                <p className="font-body text-muted-foreground text-sm mt-2">
-                  For now, please contact us for detailed directions to any location
-                </p>
-              </div>
-            </div>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link to="/contact">Get Directions</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Info */}
       <section className="py-16 md:py-24">

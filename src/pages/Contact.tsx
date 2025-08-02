@@ -1,11 +1,5 @@
-import { useState } from 'react';
 import Navigation from '@/components/Navigation';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { useToast } from '@/hooks/use-toast';
 import { 
   Mail, 
   Phone, 
@@ -16,30 +10,6 @@ import {
 } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real app, this would send the form data to a server
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
 
   const contactInfo = [
     {
@@ -92,53 +62,18 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <Label htmlFor="name" className="font-body font-semibold text-foreground">Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-2"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="email" className="font-body font-semibold text-foreground">Email *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-2"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="message" className="font-body font-semibold text-foreground">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-2"
-                      rows={5}
-                      placeholder="Tell us about your child's interests and any questions you have..."
-                    />
-                  </div>
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-heading font-semibold"
+                <div className="flex justify-center">
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe64NYWk4fsUlqANAjlE8x3WQTCw7VsyYVBMXehQ7yP3WCo4A/viewform?embedded=true" 
+                    width={640}
+                    height={988}
+                    style={{ border: 0 }}
+                    className="w-full max-w-2xl rounded-lg"
+                    title="Contact Form"
                   >
-                    Send Message
-                  </Button>
-                </form>
+                    Loading…
+                  </iframe>
+                </div>
               </CardContent>
             </Card>
 

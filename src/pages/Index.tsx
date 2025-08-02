@@ -192,13 +192,13 @@ const Index = () => {
           <p className="font-body text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto text-shadow">
             Join hundreds of kids who are already exploring the exciting world of technology with LearnSpace.
           </p>
-          <Button 
-            asChild 
-            size="lg" 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-heading font-semibold text-lg px-8 py-6"
-          >
-            <Link to="/contact">Register Now</Link>
-          </Button>
+            <Button 
+              asChild 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-heading font-semibold text-lg px-8 py-6"
+            >
+              <Link to="/registration">Register Now</Link>
+            </Button>
         </div>
       </section>
     </div>

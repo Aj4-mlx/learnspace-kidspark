@@ -48,7 +48,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button asChild variant="default" className="bg-accent hover:bg-accent/90">
-              <Link to="/contact">Register Now</Link>
+              <Link to="/registration">Register Now</Link>
             </Button>
           </div>
 
@@ -79,7 +79,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <Button asChild variant="default" className="bg-accent hover:bg-accent/90 w-fit">
-                <Link to="/contact" onClick={() => setIsOpen(false)}>Register Now</Link>
+                <Link to="/registration" onClick={() => setIsOpen(false)}>Register Now</Link>
               </Button>
             </div>
           </div>
