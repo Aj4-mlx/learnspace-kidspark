@@ -22,33 +22,18 @@ const Index = () => {
   const programs = [
     {
       icon: Bot,
-      title: "AI Adventures",
-      tagline: "Meet Your First Friendly Robot – Learn AI the fun way!"
+      title: "Discover AI Through Fun!",
+      tagline: "Ages 8–10: Explore AI through games, drawing bots, and voice assistants"
     },
     {
       icon: Code,
-      title: "Python for Young Coders",
-      tagline: "Turn ideas into code – your first step as a real programmer!"
-    },
-    {
-      icon: Palette,
-      title: "Creative Tech Lab",
-      tagline: "Unleash your imagination – design games, art, and stories with tech!"
-    },
-    {
-      icon: Smartphone,
-      title: "Build Your First App",
-      tagline: "From idea to app – create something the world can use!"
-    },
-    {
-      icon: Settings,
-      title: "Robotics & Smart Machines",
-      tagline: "Bring machines to life – explore the magic of robotics!"
+      title: "AI + First Steps in Programming!",
+      tagline: "Ages 11–13: Dive deeper into AI with hands-on projects and coding fundamentals"
     },
     {
       icon: Lightbulb,
-      title: "Design & Innovation Studio",
-      tagline: "Solve problems like an innovator – blend creativity and technology!"
+      title: "Real Coding Skills + Chatbot Creation",
+      tagline: "Ages 14–16: Master Python, Java, C++ and build intelligent chatbots"
     }
   ];
 

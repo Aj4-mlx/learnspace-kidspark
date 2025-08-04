@@ -15,39 +15,21 @@ const Programs = () => {
   const programs = [
     {
       icon: Bot,
-      title: "AI Adventures",
-      tagline: "Meet Your First Friendly Robot – Learn AI the fun way!",
-      description: "Introduce kids to artificial intelligence through interactive games and friendly AI companions. Students will learn how AI works in everyday life, create simple chatbots, and explore machine learning concepts through fun, visual activities. Perfect for curious minds wanting to understand the technology shaping our future."
+      title: "Discover AI Through Fun!",
+      tagline: "Ages 8–10: Let your child explore the amazing world of Artificial Intelligence through games, drawing bots, voice assistants, and visual learning.",
+      description: "🎮 Interactive AI Games - Fun games that teach AI concepts through play and exploration. 🖌 Creative Drawing Bots - Create art with AI assistants that respond to simple commands. 🎤 Text-to-Speech Creations - Turn written text into spoken voiceovers using AI-powered tools. Designed to spark curiosity and see results fast, all while having fun!"
     },
     {
       icon: Code,
-      title: "Python for Young Coders",
-      tagline: "Turn ideas into code – your first step as a real programmer!",
-      description: "Start the coding journey with Python, the world's most beginner-friendly programming language. Through creative projects like drawing with code, building simple games, and creating interactive stories, kids learn fundamental programming concepts while having fun and seeing immediate results."
-    },
-    {
-      icon: Palette,
-      title: "Creative Tech Lab",
-      tagline: "Unleash your imagination – design games, art, and stories with tech!",
-      description: "Blend creativity with technology in this multimedia program. Students create digital art, design simple games, compose music with code, and bring stories to life through animation. Perfect for artistic kids who want to explore how technology can enhance their creative expression."
-    },
-    {
-      icon: Smartphone,
-      title: "Build Your First App",
-      tagline: "From idea to app – create something the world can use!",
-      description: "Turn ideas into reality by building real mobile applications. Using beginner-friendly tools, students learn app design principles, user experience basics, and bring their creative concepts to life. They'll finish with a working app they can share with family and friends."
-    },
-    {
-      icon: Settings,
-      title: "Robotics & Smart Machines",
-      tagline: "Bring machines to life – explore the magic of robotics!",
-      description: "Enter the exciting world of robotics by building and programming real robots. Students learn about sensors, motors, and programming logic while creating robots that can move, respond to their environment, and complete fun challenges. Hands-on engineering at its best!"
+      title: "AI + First Steps in Programming!",
+      tagline: "Ages 11–13: Kids will dive deeper into AI with hands-on mini-projects and start learning introductory programming concepts like variables, logic, and automation.",
+      description: "💻 Coding Fundamentals - Learn variables, functions, and logic through interactive challenges. 🤖 AI Mini-Projects - Create simple AI applications that respond to user input. ⚙ Automation Basics - Build programs that can perform tasks automatically. Perfect for curious minds who want to build their own smart apps!"
     },
     {
       icon: Lightbulb,
-      title: "Design & Innovation Studio",
-      tagline: "Solve problems like an innovator – blend creativity and technology!",
-      description: "Develop critical thinking and innovation skills by identifying real-world problems and creating technology-based solutions. Students learn design thinking, prototyping, and presentation skills while working on projects that could actually make a difference in their community."
+      title: "Real Coding Skills + Chatbot Creation",
+      tagline: "Ages 14–16: Teens will gain solid foundations in Python, Java, and C++, and build intelligent chatbots like ChatGPT.",
+      description: "💻 Programming Languages - Master the fundamentals of real-world programming. Languages covered: Python, Java, C++. 🤖 AI & Chatbot Development - Build intelligent conversational agents using modern AI techniques. 📁 Portfolio Projects - Create impressive projects that showcase real technical skills. Ideal for those who want to start building real-world skills and prepare for tech careers!"
     }
   ];
 
