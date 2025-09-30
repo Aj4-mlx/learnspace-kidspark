@@ -49,6 +49,29 @@ const Programs = () => {
         </div>
       </section>
 
+      {/* BICS Partnership Program */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="bg-card rounded-lg border-4 border-blue-500 p-6 shadow-lg">
+              <h3 className="font-heading font-bold text-3xl text-blue-600 mb-3">
+                BICS
+              </h3>
+              <p className="font-body text-muted-foreground text-sm mb-4">
+                Exclusive program for BICS students with specialized curriculum and scheduling
+              </p>
+              <Button 
+                asChild 
+                size="sm" 
+                className="bg-blue-500 hover:bg-blue-600 text-white border-0"
+              >
+                <Link to="/bics">Open</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Grid */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -96,28 +119,6 @@ const Programs = () => {
                 <p className="font-body text-muted-foreground">Understand responsible technology use and develop healthy digital habits.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BICS Partnership Program */}
-      <section className="py-16 md:py-24 bg-accent/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-6">
-              BICS Partnership Program
-            </h2>
-            <p className="font-body text-muted-foreground text-lg mb-8">
-              Are you a BICS school student? We offer an exclusive partnership program designed specifically 
-              for BICS students with specialized curriculum and scheduling.
-            </p>
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading font-semibold text-lg px-8 py-6"
-            >
-              <Link to="/bics">Learn More About BICS Program</Link>
-            </Button>
           </div>
         </div>
       </section>
