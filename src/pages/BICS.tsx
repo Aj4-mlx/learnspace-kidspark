@@ -50,10 +50,10 @@ const BICS = () => {
 
             {/* Session 3 */}
             <Link to="/bics/session3">
-              <Card className="border-2 border-blue-500 bg-card hover:shadow-lg transition-shadow cursor-pointer">
+              <Card className="border-2 border-green-500 bg-green-50 hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="p-4 text-center">
-                  <h3 className="font-heading font-bold text-lg text-blue-600 mb-2">Session 3</h3>
-                  <p className="font-body text-muted-foreground text-sm">Image Generation</p>
+                  <h3 className="font-heading font-bold text-lg text-green-600 mb-2">Session 3</h3>
+                  <p className="font-body text-green-700 text-sm">Image Generation</p>
                 </CardContent>
               </Card>
             </Link>
