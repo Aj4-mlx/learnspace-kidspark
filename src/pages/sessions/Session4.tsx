@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Link, ArrowLeft, Lock } from 'lucide-react';
+import { Link, ArrowLeft } from 'lucide-react';
 
 const Session4 = () => {
   return (
@@ -21,35 +21,71 @@ const Session4 = () => {
               Back to BICS Sessions
             </Link>
           </Button>
-          <div className="flex justify-center mb-6">
-            <Lock className="w-16 h-16 text-primary-foreground" />
-          </div>
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6 text-shadow">
-            Session 4: Locked
+            Session 4: From Training to Creation (Cinema)
           </h1>
           <p className="font-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto text-shadow">
-            Complete previous sessions to unlock this content
+            Explore the journey from AI training to creative cinema production
           </p>
         </div>
       </section>
 
-      {/* Locked Content */}
+      {/* Session Content */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-border bg-card">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="border-border bg-card">
+                <CardContent className="p-6">
+                  <h3 className="font-heading font-semibold text-xl text-foreground mb-4">What You'll Learn</h3>
+                  <ul className="space-y-2">
+                    <li className="font-body text-muted-foreground">• AI training fundamentals</li>
+                    <li className="font-body text-muted-foreground">• Cinema production techniques</li>
+                    <li className="font-body text-muted-foreground">• Creative storytelling with AI</li>
+                    <li className="font-body text-muted-foreground">• Video editing and effects</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-card">
+                <CardContent className="p-6">
+                  <h3 className="font-heading font-semibold text-xl text-foreground mb-4">Activities</h3>
+                  <ul className="space-y-2">
+                    <li className="font-body text-muted-foreground">• AI model training exercises</li>
+                    <li className="font-body text-muted-foreground">• Cinema scene creation</li>
+                    <li className="font-body text-muted-foreground">• Video storytelling projects</li>
+                    <li className="font-body text-muted-foreground">• Creative film challenges</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="border-primary bg-primary/5">
               <CardContent className="p-8 text-center">
-                <Lock className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                <h3 className="font-heading font-semibold text-xl text-foreground mb-4">Session Locked</h3>
+                <h3 className="font-heading font-bold text-2xl text-foreground mb-4">Ready to Create?</h3>
                 <p className="font-body text-muted-foreground mb-6">
-                  This session will be available after you complete Sessions 1, 2, and 3. Keep learning to unlock new content!
+                  Explore the journey from AI training to creative cinema production!
                 </p>
-                <Button 
-                  asChild 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  <Link to="/bics">Return to Sessions</Link>
-                </Button>
+                <div className="space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
+                    Begin Session 4
+                  </Button>
+                  <div>
+                    <p className="font-body text-muted-foreground text-sm mb-2">Access Training Materials:</p>
+                    <Button 
+                      asChild 
+                      variant="outline" 
+                      className="border-green-500 text-green-600 hover:bg-green-50"
+                    >
+                      <a href="https://drive.google.com/drive/folders/1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6" target="_blank" rel="noopener noreferrer">
+                        Open Training Drive
+                      </a>
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

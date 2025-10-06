@@ -50,21 +50,23 @@ const BICS = () => {
 
             {/* Session 3 */}
             <Link to="/bics/session3">
-              <Card className="border-2 border-green-500 bg-green-50 hover:shadow-lg transition-shadow cursor-pointer">
+              <Card className="border-2 border-blue-500 bg-card hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="p-4 text-center">
-                  <h3 className="font-heading font-bold text-lg text-green-600 mb-2">Session 3</h3>
-                  <p className="font-body text-green-700 text-sm">Image Generation</p>
+                  <h3 className="font-heading font-bold text-lg text-blue-600 mb-2">Session 3</h3>
+                  <p className="font-body text-muted-foreground text-sm">Image Generation</p>
                 </CardContent>
               </Card>
             </Link>
 
-            {/* Session 4 - Locked */}
-            <Card className="border-2 border-gray-400 bg-gray-100 cursor-not-allowed opacity-60">
-              <CardContent className="p-4 text-center">
-                <Lock className="w-6 h-6 text-gray-500 mx-auto mb-2" />
-                <p className="font-body text-gray-500 text-sm">Locked</p>
-              </CardContent>
-            </Card>
+            {/* Session 4 */}
+            <Link to="/bics/session4">
+              <Card className="border-2 border-green-500 bg-green-50 hover:shadow-lg transition-shadow cursor-pointer">
+                <CardContent className="p-4 text-center">
+                  <h3 className="font-heading font-bold text-lg text-green-600 mb-2">Session 4</h3>
+                  <p className="font-body text-green-700 text-sm">From Training to Creation (Cinema)</p>
+                </CardContent>
+              </Card>
+            </Link>
 
             {/* Session 5 - Locked */}
             <Card className="border-2 border-gray-400 bg-gray-100 cursor-not-allowed opacity-60">
