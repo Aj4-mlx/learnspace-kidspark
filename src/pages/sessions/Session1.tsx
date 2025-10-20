@@ -49,12 +49,14 @@ const Session1 = () => {
                 <CarouselItem>
                   <Card className="border-border">
                     <CardContent className="p-4">
-                      <div className="w-full flex justify-center">
-                        <embed
-                          src="/sessions/Session1.pdf#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                      <div className="w-full overflow-hidden rounded-lg bg-white">
+                        <object
+                          data="/sessions/Session1.pdf#page=1&view=Fit&toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
                           type="application/pdf"
                           className="w-full h-[700px] md:h-[800px]"
-                        />
+                        >
+                          <p className="text-center p-8">PDF cannot be displayed. <a href="/sessions/Session1.pdf" className="text-primary underline">Download instead</a></p>
+                        </object>
                       </div>
                       <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 1 of 4</p>
@@ -65,12 +67,14 @@ const Session1 = () => {
                 <CarouselItem>
                   <Card className="border-border">
                     <CardContent className="p-4">
-                      <div className="w-full flex justify-center">
-                        <embed
-                          src="/sessions/Session1.pdf#page=2&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                      <div className="w-full overflow-hidden rounded-lg bg-white">
+                        <object
+                          data="/sessions/Session1.pdf#page=2&view=Fit&toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
                           type="application/pdf"
                           className="w-full h-[700px] md:h-[800px]"
-                        />
+                        >
+                          <p className="text-center p-8">PDF cannot be displayed. <a href="/sessions/Session1.pdf" className="text-primary underline">Download instead</a></p>
+                        </object>
                       </div>
                       <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 2 of 4</p>
@@ -81,12 +85,14 @@ const Session1 = () => {
                 <CarouselItem>
                   <Card className="border-border">
                     <CardContent className="p-4">
-                      <div className="w-full flex justify-center">
-                        <embed
-                          src="/sessions/Session1.pdf#page=3&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                      <div className="w-full overflow-hidden rounded-lg bg-white">
+                        <object
+                          data="/sessions/Session1.pdf#page=3&view=Fit&toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
                           type="application/pdf"
                           className="w-full h-[700px] md:h-[800px]"
-                        />
+                        >
+                          <p className="text-center p-8">PDF cannot be displayed. <a href="/sessions/Session1.pdf" className="text-primary underline">Download instead</a></p>
+                        </object>
                       </div>
                       <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 3 of 4</p>
@@ -97,12 +103,14 @@ const Session1 = () => {
                 <CarouselItem>
                   <Card className="border-border">
                     <CardContent className="p-4">
-                      <div className="w-full flex justify-center">
-                        <embed
-                          src="/sessions/Session1.pdf#page=4&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                      <div className="w-full overflow-hidden rounded-lg bg-white">
+                        <object
+                          data="/sessions/Session1.pdf#page=4&view=Fit&toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
                           type="application/pdf"
                           className="w-full h-[700px] md:h-[800px]"
-                        />
+                        >
+                          <p className="text-center p-8">PDF cannot be displayed. <a href="/sessions/Session1.pdf" className="text-primary underline">Download instead</a></p>
+                        </object>
                       </div>
                       <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 4 of 4</p>
