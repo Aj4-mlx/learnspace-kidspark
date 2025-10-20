@@ -2,6 +2,13 @@ import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link, ArrowLeft } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Session4 = () => {
   return (
@@ -55,6 +62,43 @@ const Session4 = () => {
               >
                 <a href="/sessions/Session4.pdf" target="_blank" rel="noopener noreferrer">
                   Download Full PDF
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Students' Work Gallery */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4 text-center">
+              Students' Creative Work
+            </h2>
+            <p className="font-body text-muted-foreground text-center mb-8">
+              Explore the amazing AI-generated cinema projects created by our students!
+            </p>
+
+            {/* Google Drive Embed */}
+            <Card className="border-border mb-8">
+              <CardContent className="p-4">
+                <iframe
+                  src="https://drive.google.com/embeddedfolderview?id=1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6#grid"
+                  className="w-full h-[500px] md:h-[600px] border-0"
+                  title="Students' Work Gallery"
+                />
+              </CardContent>
+            </Card>
+
+            <div className="text-center">
+              <Button
+                asChild
+                variant="outline"
+                className="border-green-500 text-green-600 hover:bg-green-50"
+              >
+                <a href="https://drive.google.com/drive/folders/1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6" target="_blank" rel="noopener noreferrer">
+                  View Full Gallery in Google Drive
                 </a>
               </Button>
             </div>
