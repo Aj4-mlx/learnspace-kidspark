@@ -7,12 +7,12 @@ const Session3 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <Button 
-            asChild 
+          <Button
+            asChild
             variant="outline"
             className="mb-6 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
           >
@@ -27,6 +27,38 @@ const Session3 = () => {
           <p className="font-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto text-shadow">
             Create amazing images and artwork using AI technology
           </p>
+        </div>
+      </section>
+
+      {/* Session Materials */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8 text-center">
+              Session Materials
+            </h2>
+            <Card className="border-border">
+              <CardContent className="p-4">
+                <iframe
+                  src="/sessions/Session3.pdf"
+                  className="w-full h-[700px] md:h-[800px] border-0"
+                  title="Session 3 Materials"
+                />
+              </CardContent>
+            </Card>
+
+            <div className="mt-6 text-center">
+              <Button
+                asChild
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              >
+                <a href="/sessions/Session3.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Full PDF
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -67,17 +99,17 @@ const Session3 = () => {
                   Unleash your creativity and learn how to generate stunning images using AI technology!
                 </p>
                 <div className="space-y-4">
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="bg-primary hover:bg-primary/90 text-primary-foreground"
                   >
                     Begin Session 3
                   </Button>
                   <div>
                     <p className="font-body text-muted-foreground text-sm mb-2">Try AI Image Generation:</p>
-                    <Button 
-                      asChild 
-                      variant="outline" 
+                    <Button
+                      asChild
+                      variant="outline"
                       className="border-blue-500 text-blue-600 hover:bg-blue-50"
                     >
                       <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">

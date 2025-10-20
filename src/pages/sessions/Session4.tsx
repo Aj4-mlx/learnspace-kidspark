@@ -7,12 +7,12 @@ const Session4 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <Button 
-            asChild 
+          <Button
+            asChild
             variant="outline"
             className="mb-6 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
           >
@@ -27,6 +27,38 @@ const Session4 = () => {
           <p className="font-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto text-shadow">
             Explore the journey from AI training to creative cinema production
           </p>
+        </div>
+      </section>
+
+      {/* Session Materials */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8 text-center">
+              Session Materials
+            </h2>
+            <Card className="border-border">
+              <CardContent className="p-4">
+                <iframe
+                  src="/sessions/Session4.pdf"
+                  className="w-full h-[700px] md:h-[800px] border-0"
+                  title="Session 4 Materials"
+                />
+              </CardContent>
+            </Card>
+
+            <div className="mt-6 text-center">
+              <Button
+                asChild
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              >
+                <a href="/sessions/Session4.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Full PDF
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -67,17 +99,17 @@ const Session4 = () => {
                   Explore the journey from AI training to creative cinema production!
                 </p>
                 <div className="space-y-4">
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="bg-primary hover:bg-primary/90 text-primary-foreground"
                   >
                     Begin Session 4
                   </Button>
                   <div>
                     <p className="font-body text-muted-foreground text-sm mb-2">Access Training Materials:</p>
-                    <Button 
-                      asChild 
-                      variant="outline" 
+                    <Button
+                      asChild
+                      variant="outline"
                       className="border-green-500 text-green-600 hover:bg-green-50"
                     >
                       <a href="https://drive.google.com/drive/folders/1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6" target="_blank" rel="noopener noreferrer">
