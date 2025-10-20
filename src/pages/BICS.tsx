@@ -8,7 +8,7 @@ const BICS = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -16,7 +16,7 @@ const BICS = () => {
             AI THROUGH FUN
           </h1>
           <p className="font-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto text-shadow">
-            Exclusive Technology Education Program for BICS School Students
+            Exclusive Technology Education Program for BISC School Students
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const BICS = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8 text-center">
-            BICS Sessions
+            BISC Sessions
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             {/* Session 1 */}
