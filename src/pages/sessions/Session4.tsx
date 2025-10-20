@@ -70,7 +70,7 @@ const Session4 = () => {
       </section>
 
       {/* Students' Work Gallery */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4 text-center">
@@ -80,25 +80,92 @@ const Session4 = () => {
               Explore the amazing AI-generated cinema projects created by our students!
             </p>
 
-            {/* Google Drive Embed */}
-            <Card className="border-border mb-8">
-              <CardContent className="p-4">
-                <iframe
-                  src="https://drive.google.com/embeddedfolderview?id=1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6#grid"
-                  className="w-full h-[500px] md:h-[600px] border-0"
-                  title="Students' Work Gallery"
-                />
-              </CardContent>
-            </Card>
+            {/* Image Carousel */}
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/work1.jpg"
+                          alt="Student work 1"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 1</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/work2.jpg"
+                          alt="Student work 2"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 2</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/work3.jpg"
+                          alt="Student work 3"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 3</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/work4.jpg"
+                          alt="Student work 4"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 4</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/work5.jpg"
+                          alt="Student work 5"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 5</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
 
-            <div className="text-center">
+            <div className="text-center mt-8">
               <Button
                 asChild
                 variant="outline"
                 className="border-green-500 text-green-600 hover:bg-green-50"
               >
                 <a href="https://drive.google.com/drive/folders/1nXoUldTBq7mfqYgZYgvWHscM8O6KDmB6" target="_blank" rel="noopener noreferrer">
-                  View Full Gallery in Google Drive
+                  View More in Google Drive
                 </a>
               </Button>
             </div>
