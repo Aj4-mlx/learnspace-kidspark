@@ -88,12 +88,12 @@ const Session4 = () => {
                     <CardContent className="p-4">
                       <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                          src="/student-work/work1.jpg"
-                          alt="Student work 1"
+                          src="/student-work/jana1.jpeg"
+                          alt="Jana's AI Cinema Project"
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 1</p>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Jana's Project</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -102,12 +102,12 @@ const Session4 = () => {
                     <CardContent className="p-4">
                       <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                          src="/student-work/work2.jpg"
-                          alt="Student work 2"
+                          src="/student-work/layan.png"
+                          alt="Layan's AI Cinema Project"
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 2</p>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Layan's Project</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -116,12 +116,12 @@ const Session4 = () => {
                     <CardContent className="p-4">
                       <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                          src="/student-work/work3.jpg"
-                          alt="Student work 3"
+                          src="/student-work/layan2.jpeg"
+                          alt="Layan's Second AI Cinema Project"
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 3</p>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Layan's Second Project</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -130,12 +130,12 @@ const Session4 = () => {
                     <CardContent className="p-4">
                       <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                          src="/student-work/work4.jpg"
-                          alt="Student work 4"
+                          src="/student-work/Nayla.jpeg"
+                          alt="Nayla's AI Cinema Project"
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 4</p>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Nayla's Project</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -144,12 +144,26 @@ const Session4 = () => {
                     <CardContent className="p-4">
                       <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                          src="/student-work/work5.jpg"
-                          alt="Student work 5"
+                          src="/student-work/sima.jpeg"
+                          alt="Sima's AI Cinema Project"
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Student Project 5</p>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Sima's Project</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-4">
+                      <div className="aspect-video w-full bg-muted flex items-center justify-center overflow-hidden rounded-lg">
+                        <img
+                          src="/student-work/Sima(1).jpeg"
+                          alt="Sima's Second AI Cinema Project"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-body text-sm text-muted-foreground text-center mt-4">Sima's Second Project</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
