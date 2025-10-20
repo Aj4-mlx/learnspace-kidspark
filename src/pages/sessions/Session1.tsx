@@ -2,13 +2,6 @@ import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link, ArrowLeft } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const Session1 = () => {
   return (
@@ -37,75 +30,22 @@ const Session1 = () => {
         </div>
       </section>
 
-      {/* Session Materials Slider */}
+      {/* Session Materials */}
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8 text-center">
               Session Materials
             </h2>
-            <Carousel className="w-full">
-              <CarouselContent>
-                <CarouselItem>
-                  <Card className="border-border">
-                    <CardContent className="p-4">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=1"
-                        className="w-full h-[700px] md:h-[800px] border-0"
-                        title="Session 1 Materials - Page 1"
-                      />
-                      <div className="mt-4 text-center">
-                        <p className="font-body text-sm text-muted-foreground">Page 1 of 4</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-                <CarouselItem>
-                  <Card className="border-border">
-                    <CardContent className="p-4">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=2"
-                        className="w-full h-[700px] md:h-[800px] border-0"
-                        title="Session 1 Materials - Page 2"
-                      />
-                      <div className="mt-4 text-center">
-                        <p className="font-body text-sm text-muted-foreground">Page 2 of 4</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-                <CarouselItem>
-                  <Card className="border-border">
-                    <CardContent className="p-4">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=3"
-                        className="w-full h-[700px] md:h-[800px] border-0"
-                        title="Session 1 Materials - Page 3"
-                      />
-                      <div className="mt-4 text-center">
-                        <p className="font-body text-sm text-muted-foreground">Page 3 of 4</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-                <CarouselItem>
-                  <Card className="border-border">
-                    <CardContent className="p-4">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=4"
-                        className="w-full h-[700px] md:h-[800px] border-0"
-                        title="Session 1 Materials - Page 4"
-                      />
-                      <div className="mt-4 text-center">
-                        <p className="font-body text-sm text-muted-foreground">Page 4 of 4</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
+            <Card className="border-border">
+              <CardContent className="p-4">
+                <iframe
+                  src="/sessions/Session1.pdf"
+                  className="w-full h-[700px] md:h-[800px] border-0"
+                  title="Session 1 Materials"
+                />
+              </CardContent>
+            </Card>
 
             <div className="mt-6 text-center">
               <Button
