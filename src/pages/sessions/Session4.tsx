@@ -183,6 +183,54 @@ const Session4 = () => {
                 </a>
               </Button>
             </div>
+
+            {/* Video Gallery */}
+            <div className="mt-16">
+              <h3 className="font-heading font-bold text-2xl md:text-3xl text-foreground mb-4 text-center">
+                AI-Generated Cinema Videos
+              </h3>
+              <p className="font-body text-muted-foreground text-center mb-8">
+                Watch the incredible AI-powered videos created by our students!
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="border-border">
+                  <CardContent className="p-4">
+                    <div className="aspect-video w-full bg-black rounded-lg overflow-hidden">
+                      <video
+                        controls
+                        className="w-full h-full"
+                        preload="metadata"
+                      >
+                        <source src="/student-work/gemini_generated_video_EF208749.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <p className="font-body text-sm text-muted-foreground text-center mt-4">
+                      Gemini-Generated AI Cinema
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-border">
+                  <CardContent className="p-4">
+                    <div className="aspect-video w-full bg-black rounded-lg overflow-hidden">
+                      <video
+                        controls
+                        className="w-full h-full"
+                        preload="metadata"
+                      >
+                        <source src="/student-work/Generated File October 08, 2025 - 4_16PM.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <p className="font-body text-sm text-muted-foreground text-center mt-4">
+                      Student AI Cinema Creation
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
