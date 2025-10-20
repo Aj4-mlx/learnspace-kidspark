@@ -48,13 +48,15 @@ const Session1 = () => {
               <CarouselContent>
                 <CarouselItem>
                   <Card className="border-border">
-                    <CardContent className="p-0">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=1"
-                        className="w-full h-[600px] md:h-[700px]"
-                        title="Session 1 Materials - Page 1"
-                      />
-                      <div className="p-4 text-center bg-card border-t">
+                    <CardContent className="p-4">
+                      <div className="w-full flex justify-center">
+                        <embed
+                          src="/sessions/Session1.pdf#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                          type="application/pdf"
+                          className="w-full h-[700px] md:h-[800px]"
+                        />
+                      </div>
+                      <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 1 of 4</p>
                       </div>
                     </CardContent>
@@ -62,13 +64,15 @@ const Session1 = () => {
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="border-border">
-                    <CardContent className="p-0">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=2"
-                        className="w-full h-[600px] md:h-[700px]"
-                        title="Session 1 Materials - Page 2"
-                      />
-                      <div className="p-4 text-center bg-card border-t">
+                    <CardContent className="p-4">
+                      <div className="w-full flex justify-center">
+                        <embed
+                          src="/sessions/Session1.pdf#page=2&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                          type="application/pdf"
+                          className="w-full h-[700px] md:h-[800px]"
+                        />
+                      </div>
+                      <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 2 of 4</p>
                       </div>
                     </CardContent>
@@ -76,13 +80,15 @@ const Session1 = () => {
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="border-border">
-                    <CardContent className="p-0">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=3"
-                        className="w-full h-[600px] md:h-[700px]"
-                        title="Session 1 Materials - Page 3"
-                      />
-                      <div className="p-4 text-center bg-card border-t">
+                    <CardContent className="p-4">
+                      <div className="w-full flex justify-center">
+                        <embed
+                          src="/sessions/Session1.pdf#page=3&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                          type="application/pdf"
+                          className="w-full h-[700px] md:h-[800px]"
+                        />
+                      </div>
+                      <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 3 of 4</p>
                       </div>
                     </CardContent>
@@ -90,13 +96,15 @@ const Session1 = () => {
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="border-border">
-                    <CardContent className="p-0">
-                      <iframe
-                        src="/sessions/Session1.pdf#page=4"
-                        className="w-full h-[600px] md:h-[700px]"
-                        title="Session 1 Materials - Page 4"
-                      />
-                      <div className="p-4 text-center bg-card border-t">
+                    <CardContent className="p-4">
+                      <div className="w-full flex justify-center">
+                        <embed
+                          src="/sessions/Session1.pdf#page=4&view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+                          type="application/pdf"
+                          className="w-full h-[700px] md:h-[800px]"
+                        />
+                      </div>
+                      <div className="mt-4 text-center">
                         <p className="font-body text-sm text-muted-foreground">Page 4 of 4</p>
                       </div>
                     </CardContent>
