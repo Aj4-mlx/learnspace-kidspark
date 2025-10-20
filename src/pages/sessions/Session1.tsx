@@ -2,17 +2,24 @@ import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link, ArrowLeft } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Session1 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <Button 
-            asChild 
+          <Button
+            asChild
             variant="outline"
             className="mb-6 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
           >
@@ -27,6 +34,91 @@ const Session1 = () => {
           <p className="font-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto text-shadow">
             Discover what Artificial Intelligence is and how it works in our daily lives
           </p>
+        </div>
+      </section>
+
+      {/* Session Materials Slider */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8 text-center">
+              Session Materials
+            </h2>
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-0">
+                      <iframe
+                        src="/sessions/Session1.pdf#page=1"
+                        className="w-full h-[600px] md:h-[700px]"
+                        title="Session 1 Materials - Page 1"
+                      />
+                      <div className="p-4 text-center bg-card border-t">
+                        <p className="font-body text-sm text-muted-foreground">Page 1 of 4</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-0">
+                      <iframe
+                        src="/sessions/Session1.pdf#page=2"
+                        className="w-full h-[600px] md:h-[700px]"
+                        title="Session 1 Materials - Page 2"
+                      />
+                      <div className="p-4 text-center bg-card border-t">
+                        <p className="font-body text-sm text-muted-foreground">Page 2 of 4</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-0">
+                      <iframe
+                        src="/sessions/Session1.pdf#page=3"
+                        className="w-full h-[600px] md:h-[700px]"
+                        title="Session 1 Materials - Page 3"
+                      />
+                      <div className="p-4 text-center bg-card border-t">
+                        <p className="font-body text-sm text-muted-foreground">Page 3 of 4</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border-border">
+                    <CardContent className="p-0">
+                      <iframe
+                        src="/sessions/Session1.pdf#page=4"
+                        className="w-full h-[600px] md:h-[700px]"
+                        title="Session 1 Materials - Page 4"
+                      />
+                      <div className="p-4 text-center bg-card border-t">
+                        <p className="font-body text-sm text-muted-foreground">Page 4 of 4</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+
+            <div className="mt-6 text-center">
+              <Button
+                asChild
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              >
+                <a href="/sessions/Session1.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Full PDF
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -66,8 +158,8 @@ const Session1 = () => {
                 <p className="font-body text-muted-foreground mb-6">
                   This session will introduce you to the amazing world of AI through fun activities and games!
                 </p>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
                   Begin Session 1
