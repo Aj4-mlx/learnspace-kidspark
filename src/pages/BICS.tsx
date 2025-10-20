@@ -63,7 +63,7 @@ const BICS = () => {
               <Card className="border-2 border-green-500 bg-green-50 hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="p-4 text-center">
                   <h3 className="font-heading font-bold text-lg text-green-600 mb-2">Session 4</h3>
-                  <p className="font-body text-green-700 text-sm">From Training to Creation (Cinema)</p>
+                  <p className="font-body text-green-700 text-sm">From Training to Creation (Cinemas)</p>
                 </CardContent>
               </Card>
             </Link>
