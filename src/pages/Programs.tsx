@@ -1,17 +1,21 @@
 import Navigation from '@/components/Navigation';
 import ProgramCard from '@/components/ProgramCard';
+import N8nChatbot from '@/components/N8nChatbot';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { 
-  Bot, 
-  Code, 
-  Palette, 
-  Smartphone, 
-  Settings, 
-  Lightbulb 
+import { useState } from 'react';
+import {
+  Bot,
+  Code,
+  Palette,
+  Smartphone,
+  Settings,
+  Lightbulb
 } from 'lucide-react';
 
 const Programs = () => {
+  const [chatbotOpen, setChatbotOpen] = useState(false);
+
   const programs = [
     {
       icon: Bot,
@@ -36,7 +40,7 @@ const Programs = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -60,13 +64,22 @@ const Programs = () => {
               <p className="font-body text-muted-foreground text-sm mb-4">
                 Exclusive program for BICS students with specialized curriculum and scheduling
               </p>
-              <Button 
-                asChild 
-                size="sm" 
-                className="bg-blue-500 hover:bg-blue-600 text-white border-0"
-              >
-                <Link to="/bics">Open</Link>
-              </Button>
+              <div className="flex gap-3 justify-center">
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-blue-500 hover:bg-blue-600 text-white border-0"
+                >
+                  <Link to="/bics">Open</Link>
+                </Button>
+                <Button
+                  size="sm"
+                  className="bg-purple-500 hover:bg-purple-600 text-white border-0"
+                  onClick={() => setChatbotOpen(true)}
+                >
+                  Chatbot
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -87,7 +100,7 @@ const Programs = () => {
               />
             ))}
           </div>
-          
+
           {/* Learning Outcomes */}
           <div className="bg-muted/30 rounded-lg p-8 md:p-12">
             <h2 className="font-heading font-bold text-2xl md:text-3xl text-foreground mb-8 text-center">
@@ -132,15 +145,17 @@ const Programs = () => {
           <p className="font-body text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
             Give your child the opportunity to explore technology in a fun, supportive environment.
           </p>
-          <Button 
-            asChild 
-            size="lg" 
+          <Button
+            asChild
+            size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-heading font-semibold text-lg px-8 py-6"
           >
             <Link to="/contact">Get Started Today</Link>
           </Button>
         </div>
       </section>
+
+      <N8nChatbot isOpen={chatbotOpen} onClose={() => setChatbotOpen(false)} />
     </div>
   );
 };
