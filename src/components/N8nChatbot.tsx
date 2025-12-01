@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { useEffect, useRef } from 'react';
 import '@n8n/chat/dist/style.css';
 import { createChat } from '@n8n/chat';
@@ -10,10 +10,12 @@ interface N8nChatbotProps {
 
 const N8nChatbot = ({ isOpen, onClose }: N8nChatbotProps) => {
     const chatContainerRef = useRef<HTMLDivElement>(null);
-    const chatInitializedRef = useRef(false);
 
     useEffect(() => {
-        if (isOpen && chatContainerRef.current && !chatInitializedRef.current) {
+        if (isOpen && chatContainerRef.current) {
+            // Clear the container first
+            chatContainerRef.current.innerHTML = '';
+
             createChat({
                 webhookUrl: 'https://aj4-mlx.app.n8n.cloud/webhook/9b92d849-43a3-49d9-bb60-64c601a757a4/chat',
                 target: chatContainerRef.current,
@@ -25,7 +27,6 @@ const N8nChatbot = ({ isOpen, onClose }: N8nChatbotProps) => {
                     'How can I help you today?'
                 ]
             });
-            chatInitializedRef.current = true;
         }
     }, [isOpen]);
 
@@ -34,6 +35,9 @@ const N8nChatbot = ({ isOpen, onClose }: N8nChatbotProps) => {
             <DialogContent className="max-w-4xl max-h-[80vh] flex flex-col p-0 gap-0">
                 <DialogHeader className="p-4 border-b">
                     <DialogTitle>BICS AI Chatbot Assistant</DialogTitle>
+                    <DialogDescription className="sr-only">
+                        Interactive AI chatbot for BICS students to get help and information
+                    </DialogDescription>
                 </DialogHeader>
                 <div
                     ref={chatContainerRef}
