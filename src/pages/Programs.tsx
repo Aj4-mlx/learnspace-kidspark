@@ -1,9 +1,7 @@
 import Navigation from '@/components/Navigation';
 import ProgramCard from '@/components/ProgramCard';
-import N8nChatbot from '@/components/N8nChatbot';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import {
   Bot,
   Code,
@@ -14,8 +12,6 @@ import {
 } from 'lucide-react';
 
 const Programs = () => {
-  const [chatbotOpen, setChatbotOpen] = useState(false);
-
   const programs = [
     {
       icon: Bot,
@@ -73,11 +69,11 @@ const Programs = () => {
                   <Link to="/bics">Open</Link>
                 </Button>
                 <Button
+                  asChild
                   size="sm"
                   className="bg-purple-500 hover:bg-purple-600 text-white border-0"
-                  onClick={() => setChatbotOpen(true)}
                 >
-                  Chatbot
+                  <Link to="/chatbot">Chatbot</Link>
                 </Button>
               </div>
             </div>
@@ -154,8 +150,6 @@ const Programs = () => {
           </Button>
         </div>
       </section>
-
-      <N8nChatbot isOpen={chatbotOpen} onClose={() => setChatbotOpen(false)} />
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Programs from "./pages/Programs";
 import BICS from "./pages/BICS";
+import Chatbot from "./pages/Chatbot";
 import Collaborations from "./pages/Collaborations";
 import Locations from "./pages/Locations";
 import Contact from "./pages/Contact";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/bics" element={<BICS />} />
+          <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/bics/session1" element={<Session1 />} />
           <Route path="/bics/session2" element={<Session2 />} />
           <Route path="/bics/session3" element={<Session3 />} />
