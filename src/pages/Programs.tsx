@@ -71,7 +71,7 @@ const Programs = () => {
                 <Button
                   asChild
                   size="sm"
-                  className="bg-purple-500 hover:bg-purple-600 text-white border-0"
+                  className="bg-slate-900 hover:bg-slate-800 text-white border-0"
                 >
                   <Link to="/chatbot">Chatbot</Link>
                 </Button>
