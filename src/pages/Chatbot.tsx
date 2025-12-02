@@ -3,6 +3,7 @@ import Navigation from '@/components/Navigation';
 import { Sparkles } from 'lucide-react';
 import '@n8n/chat/dist/style.css';
 import '../chatbot-theme.css';
+import '../chatbot-input-fix.css';
 import { createChat } from '@n8n/chat';
 import biscLogo from '../assets/bisc_logo.jpg';
 

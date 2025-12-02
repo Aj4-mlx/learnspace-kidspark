@@ -1,0 +1,5 @@
+/* Fix for chat input text visibility */
+.n8n-chat input,
+.n8n-chat textarea {
+    color: white !important;
+}
