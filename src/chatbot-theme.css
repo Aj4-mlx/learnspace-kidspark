@@ -1,0 +1,54 @@
+/* N8N Chat Widget Customization - LearnSpace Theme */
+:root {
+    --chat--color--primary: hsl(178, 62%, 55%);
+    /* LearnSpace turquoise */
+    --chat--color--primary-shade-50: hsl(178, 62%, 50%);
+    --chat--color--primary--shade-100: hsl(178, 62%, 45%);
+    --chat--color--secondary: hsl(45, 98%, 63%);
+    /* LearnSpace yellow */
+    --chat--color-secondary-shade-50: hsl(45, 98%, 58%);
+    --chat--color-white: hsl(44, 32%, 96%);
+    --chat--color-light: hsl(44, 32%, 96%);
+    --chat--color-light-shade-50: hsl(44, 32%, 92%);
+    --chat--color-light-shade-100: hsl(171, 12%, 85%);
+    --chat--color-medium: hsl(171, 12%, 85%);
+    --chat--color-dark: hsl(171, 12%, 24%);
+    --chat--color-disabled: hsl(171, 12%, 45%);
+    --chat--color-typing: hsl(171, 12%, 35%);
+
+    --chat--spacing: 1rem;
+    --chat--border-radius: 0.5rem;
+    --chat--transition-duration: 0.2s;
+
+    --chat--window--width: 100%;
+    --chat--window--height: 100%;
+
+    --chat--header--padding: 1.25rem;
+    --chat--header--background: hsl(178, 62%, 55%);
+    --chat--header--color: hsl(44, 32%, 96%);
+    --chat--header--border-bottom: 2px solid hsl(45, 98%, 63%);
+    --chat--heading--font-size: 1.5em;
+    --chat--heading--font-weight: 700;
+
+    --chat--message--font-size: 1rem;
+    --chat--message--padding: 1rem;
+    --chat--message--border-radius: 0.75rem;
+    --chat--message-line-height: 1.6;
+    --chat--message--bot--background: hsl(44, 32%, 98%);
+    --chat--message--bot--color: hsl(171, 12%, 24%);
+    --chat--message--bot--border: 1px solid hsl(171, 12%, 85%);
+    --chat--message--user--background: hsl(178, 62%, 55%);
+    --chat--message--user--color: hsl(44, 32%, 96%);
+    --chat--message--user--border: none;
+
+    --chat--toggle--background: hsl(15, 98%, 60%);
+    /* LearnSpace orange */
+    --chat--toggle--hover--background: hsl(15, 98%, 55%);
+    --chat--toggle--active--background: hsl(15, 98%, 50%);
+    --chat--toggle--color: hsl(44, 32%, 96%);
+    --chat--toggle--size: 64px;
+
+    --chat--input--background: hsl(44, 32%, 98%);
+    --chat--input--border: 1px solid hsl(171, 12%, 85%);
+    --chat--input--border-radius: 0.5rem;
+}
