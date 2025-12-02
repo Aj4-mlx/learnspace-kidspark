@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
 import Navigation from '@/components/Navigation';
-import { MessageCircle, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import '@n8n/chat/dist/style.css';
 import '../chatbot-theme.css';
 import { createChat } from '@n8n/chat';
+import biscLogo from '../assets/bisc_logo.jpg';
 
 const Chatbot = () => {
     const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -17,14 +18,6 @@ const Chatbot = () => {
                 mode: 'fullscreen',
                 showWelcomeScreen: true,
                 loadPreviousSession: true,
-                poweredBy: false,
-                // Use a transparent 1x1 SVG so the launcher appears without an icon
-                icons: {
-                    openChat:
-                        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1'%20height='1'%3E%3C/svg%3E",
-                    closeChat:
-                        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1'%20height='1'%3E%3C/svg%3E",
-                },
                 initialMessages: [
                     'Welcome to BICS AI Assistant! 👋',
                     'How can I help you today?'
@@ -54,8 +47,8 @@ const Chatbot = () => {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-br from-cyan-400 via-sky-400 to-indigo-500 shadow-[0_18px_40px_rgba(56,189,248,0.6)]">
-                                    <MessageCircle className="h-10 w-10 text-slate-950" />
+                                <div className="flex h-20 w-20 items-center justify-center rounded-3xl overflow-hidden bg-white shadow-[0_18px_40px_rgba(56,189,248,0.6)]">
+                                    <img src={biscLogo} alt="BISC Logo" className="h-full w-full object-cover" />
                                 </div>
                                 <div className="space-y-2">
                                     <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight">
