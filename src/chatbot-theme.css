@@ -1,54 +1,105 @@
-/* N8N Chat Widget Customization - LearnSpace Theme */
+/* N8N Chat Widget Customization - Dark Neon "Companion" Theme */
 :root {
-    --chat--color--primary: hsl(178, 62%, 55%);
-    /* LearnSpace turquoise */
-    --chat--color--primary-shade-50: hsl(178, 62%, 50%);
-    --chat--color--primary--shade-100: hsl(178, 62%, 45%);
-    --chat--color--secondary: hsl(45, 98%, 63%);
-    /* LearnSpace yellow */
-    --chat--color-secondary-shade-50: hsl(45, 98%, 58%);
-    --chat--color-white: hsl(44, 32%, 96%);
-    --chat--color-light: hsl(44, 32%, 96%);
-    --chat--color-light-shade-50: hsl(44, 32%, 92%);
-    --chat--color-light-shade-100: hsl(171, 12%, 85%);
-    --chat--color-medium: hsl(171, 12%, 85%);
-    --chat--color-dark: hsl(171, 12%, 24%);
-    --chat--color-disabled: hsl(171, 12%, 45%);
-    --chat--color-typing: hsl(171, 12%, 35%);
+    /* Brand & accent colors */
+    --chat--color--primary: hsl(190, 92%, 56%);
+    --chat--color--primary-shade-50: hsl(190, 92%, 50%);
+    --chat--color--primary--shade-100: hsl(190, 92%, 45%);
+    --chat--color--secondary: hsl(257, 92%, 70%);
+    --chat--color-secondary-shade-50: hsl(257, 92%, 63%);
 
+    /* Surface colors */
+    --chat--color-white: hsl(222, 40%, 96%);
+    --chat--color-light: hsl(222, 35%, 14%);
+    --chat--color-light-shade-50: hsl(222, 40%, 12%);
+    --chat--color-light-shade-100: hsl(222, 40%, 18%);
+    --chat--color-medium: hsl(222, 26%, 30%);
+    --chat--color-dark: hsl(222, 40%, 8%);
+    --chat--color-disabled: hsl(222, 15%, 35%);
+    --chat--color-typing: hsl(222, 40%, 40%);
+
+    /* Layout */
     --chat--spacing: 1rem;
-    --chat--border-radius: 0.5rem;
+    --chat--border-radius: 1rem;
     --chat--transition-duration: 0.2s;
 
     --chat--window--width: 100%;
     --chat--window--height: 100%;
 
-    --chat--header--padding: 1.25rem;
-    --chat--header--background: hsl(178, 62%, 55%);
-    --chat--header--color: hsl(44, 32%, 96%);
-    --chat--header--border-bottom: 2px solid hsl(45, 98%, 63%);
-    --chat--heading--font-size: 1.5em;
-    --chat--heading--font-weight: 700;
+    /* Header */
+    --chat--header--padding: 1.1rem;
+    --chat--header--background: hsl(222, 45%, 10%);
+    --chat--header--color: hsl(222, 40%, 96%);
+    --chat--header--border-bottom: 1px solid hsla(190, 92%, 56%, 0.25);
+    --chat--heading--font-size: 1.15rem;
+    --chat--heading--font-weight: 650;
 
-    --chat--message--font-size: 1rem;
-    --chat--message--padding: 1rem;
-    --chat--message--border-radius: 0.75rem;
+    /* Messages */
+    --chat--message--font-size: 0.95rem;
+    --chat--message--padding: 0.9rem 1rem;
+    --chat--message--border-radius: 0.9rem;
     --chat--message-line-height: 1.6;
-    --chat--message--bot--background: hsl(44, 32%, 98%);
-    --chat--message--bot--color: hsl(171, 12%, 24%);
-    --chat--message--bot--border: 1px solid hsl(171, 12%, 85%);
-    --chat--message--user--background: hsl(178, 62%, 55%);
-    --chat--message--user--color: hsl(44, 32%, 96%);
+
+    --chat--message--bot--background: rgba(15, 23, 42, 0.9);
+    --chat--message--bot--color: hsl(220, 40%, 92%);
+    --chat--message--bot--border: 1px solid rgba(148, 163, 184, 0.25);
+
+    --chat--message--user--background: linear-gradient(135deg, hsl(257, 92%, 70%), hsl(190, 92%, 56%));
+    --chat--message--user--color: hsl(222, 40%, 96%);
     --chat--message--user--border: none;
 
-    --chat--toggle--background: hsl(15, 98%, 60%);
-    /* LearnSpace orange */
-    --chat--toggle--hover--background: hsl(15, 98%, 55%);
-    --chat--toggle--active--background: hsl(15, 98%, 50%);
-    --chat--toggle--color: hsl(44, 32%, 96%);
+    /* Toggle / launcher */
+    --chat--toggle--background: hsl(257, 92%, 70%);
+    --chat--toggle--hover--background: hsl(257, 92%, 65%);
+    --chat--toggle--active--background: hsl(257, 92%, 60%);
+    --chat--toggle--color: hsl(222, 40%, 96%);
     --chat--toggle--size: 64px;
 
-    --chat--input--background: hsl(44, 32%, 98%);
-    --chat--input--border: 1px solid hsl(171, 12%, 85%);
-    --chat--input--border-radius: 0.5rem;
+    /* Input */
+    --chat--input--background: hsl(222, 35%, 12%);
+    --chat--input--border: 1px solid rgba(148, 163, 184, 0.45);
+    --chat--input--border-radius: 999px;
 }
+
+/* Hide "Powered by n8n" footer text from the embedded widget */
+.chat-powered-by {
+    display: none !important;
+}
+
+/* Hide the chat launcher icon inside the pill toggle button */
+.chat-toggle svg,
+.chat-toggle__icon,
+.chat-launcher svg,
+.chat-launcher__icon {
+    display: none !important;
+}  
+/* Hide "Powered by n8n" footer text */  
+.chat-powered-by {  
+    display: none !important;  
+}  
+  
+/* Replace chat launcher icon with BICS logo */  
+.chat-toggle,  
+.chat-launcher,  
+[class*="chat-toggle"],  
+[class*="chat-launcher"] {  
+    position: relative;  
+}  
+  
+/* Add BICS logo as background image */  
+.chat-toggle::before,  
+.chat-launcher::before,  
+[class*="chat-toggle"]::before,  
+[class*="chat-launcher"]::before {  
+    content: '';  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    width: 80%;  
+    height: 80%;  
+    background-image: url('../assets/bics-logo.jpg');  
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    background-position: center;  
+    z-index: 1;  
+} 
