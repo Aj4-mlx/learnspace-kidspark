@@ -19,7 +19,7 @@ const Chatbot = () => {
                 showWelcomeScreen: true,
                 loadPreviousSession: true,
                 initialMessages: [
-                    'Welcome to BICS AI Assistant! 👋',
+                    'Welcome to BISC AI Assistant! 👋',
                     'How can I help you today?'
                 ]
             });
@@ -56,7 +56,7 @@ const Chatbot = () => {
                                     </h1>
                                     <p className="text-sm md:text-base text-slate-300 leading-relaxed">
                                         Get instant answers, creative ideas, and friendly guidance tailored for every
-                                        BICS learner. Available 24/7 whenever curiosity strikes.
+                                        BISC learner. Available 24/7 whenever curiosity strikes.
                                     </p>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ const Chatbot = () => {
                                     type="button"
                                     className="inline-flex items-center justify-center rounded-full bg-cyan-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(34,211,238,0.7)] hover:bg-cyan-400 transition-colors"
                                 >
-                                    Start chatting
+                                    Your Learning Companion
                                 </button>
                                 <div className="flex items-center gap-2 text-xs text-slate-400">
                                     <div className="flex -space-x-2">
@@ -101,7 +101,7 @@ const Chatbot = () => {
                                             🌟
                                         </span>
                                     </div>
-                                    Trusted by BICS learners every day
+                                    Trusted by BISC learners every day
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ const Chatbot = () => {
                                     Live assistant
                                 </p>
                                 <h2 className="font-heading text-lg font-semibold text-slate-50">
-                                    BICS AI Assistant
+                                    BISC AI Assistant
                                 </h2>
                                 <p className="text-xs text-slate-400">
                                     Ask anything about sessions, projects, or new ideas.
