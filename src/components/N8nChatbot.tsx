@@ -17,7 +17,7 @@ const N8nChatbot = ({ isOpen, onClose }: N8nChatbotProps) => {
             chatContainerRef.current.innerHTML = '';
 
             createChat({
-                webhookUrl: 'https://aj4-mlx.app.n8n.cloud/webhook/9b92d849-43a3-49d9-bb60-64c601a757a4/chat',
+                webhookUrl: 'https://aj4-mlx.app.n8n.cloud/webhook/d92d978d-ba41-450f-9e17-00dc5fe4eed8/chat',
                 target: chatContainerRef.current,
                 mode: 'fullscreen',
                 showWelcomeScreen: true,
